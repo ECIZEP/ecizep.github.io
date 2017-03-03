@@ -1,0 +1,360 @@
+
+
+/* reset css */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?eae1im');
+  src:  url('../fonts/icomoon.eot?eae1im#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?eae1im') format('truetype'),
+    url('../fonts/icomoon.woff?eae1im') format('woff'),
+    url('../fonts/icomoon.svg?eae1im#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-left:before {
+  content: "\e900";
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+	border: 0px;
+}
+
+html{
+	font-size: 80px;
+}
+
+p{
+	font-size: 0.35rem;
+}
+
+h1{
+	font-size: 0.4rem;
+}
+
+@media screen and (max-width: 426px) {
+	html{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	html{
+		font-size: 40px;
+	}
+}
+
+body{
+	font-family: "微软雅黑";
+	background-color: #f5f5f5;
+	
+}
+
+header{
+	text-align: center;
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+	position: relative;
+}
+
+header a{
+	display: block;
+
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	margin-top: -0.2rem;
+	font-size: 0.4rem;
+	color: white;
+	font-weight: bold !important;
+}
+
+header h1{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.45rem;
+	color: white;
+	background-color: #91d4da;
+	font-weight: bold;
+}
+
+nav{
+	height: 0.8rem;
+	font-size: 0;
+	text-align: center;
+	background-color: white;
+}
+
+nav li{
+	display: inline-block;
+	width: 20%;
+	box-sizing: border-box;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.4rem;
+	border-bottom: 3px solid white;
+	letter-spacing: 0;
+}
+
+
+nav li:nth-of-type(2){
+	border-bottom: 3px solid #91d4da;
+}
+
+
+.img img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.model1,.model2{
+	width: 100%;
+	background-color: white;
+}
+
+
+
+.model1 ul{
+	display:-webkit-flex;
+	display:flex;
+	
+	-webkit-flex-flow:row nowrap;
+	flex-flow: row nowrap;
+	
+	-webkit-align-items:center;
+	align-items:center;
+
+	-webkit-justify-content:space-around;
+	justify-content: space-around; 
+	margin:0 3%;
+	border-bottom: 2px solid #ddd;
+}
+
+.model1 ul li{
+	height: 2.6rem;
+	margin-right: 0.1rem;
+	text-align: center;
+}
+
+.model1 ul li figure{
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 0.4rem;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50% 50%;
+	background-color:#00c7d9;
+}
+
+.model1 ul li figure img{
+	height: 0.6rem;
+	width: 0.6rem;
+	margin: auto;
+}
+
+.model1 ul li p{
+	margin-top: 0.3rem;
+	font-size: 0.35rem;
+}
+
+.model2 ul{
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row nowrap;
+	-webkit-flex-flow:row nowrap;
+
+	padding:10px 3%;
+}
+
+.model2 ul li{
+	border-right: 1px solid #ddd;
+	flex: 1 1 0;
+	-webkit-flex-grow: 1 1 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+
+.model2 li:last-child{
+	border-right: 0px;
+}
+
+.model2 figure{
+	height: 2.3rem;
+}
+
+.model2 li img{
+	width: 80%;
+}
+
+.model2 li h1{
+	font-size: 0.4rem;
+}
+
+.model2 li p{
+	font-size: 0.35rem;
+	color: #6f6b6b;
+	margin-top: 0.1rem;
+}
+
+
+.model3{
+	background: white;
+	padding:0px 3%;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+.model3 h1{
+	font-size: 0.4rem;
+	border-bottom:1px solid #ddd;
+	padding: 0.2rem 0px;
+	margin-bottom: 10px;
+}
+
+.section_item{
+	padding-bottom: 20px;
+	height: 2.2rem;
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row nowrap;
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.section_item figure{
+	width: 30%;
+}
+.section_item figure img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.model3 ul{
+	width: 66%;
+	display: flex;
+	display:-webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-content: space-between;
+	-webkit-align-content: space-between;
+	
+}
+
+.model3 ul li{
+	background: #ddd;
+	font-size: 0.3rem;
+	padding: 0.2rem 0.4rem;
+	flex: 0 1 30%;	
+	text-align: center;
+}
+
+
+.model4{
+	background: white;
+	
+}
+
+.model4 ul li{
+	padding: 10px 3%;
+	display: flex;
+	display: -webkit-flex;
+	
+	flex-flow: row nowrap;
+	-webkit-flex-flow:row nowrap;
+	
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.model4 li figure{
+	flex: 0 0 35%;
+	-webkit-flex:0 0 35%;
+}
+
+.model4 li figure img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.model4 li .info{
+	flex:0 0 60%;
+	position: relative;
+} 
+
+.model4  p{
+	color: grey;
+	position: absolute;
+	bottom: 0px;
+}
+
+.model4 article{
+	padding: 10px 3%;
+	position: relative;
+}
+
+.model4 .pics{
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	-webkit-flex-flow:row nowrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	margin:10px 0px;
+}
+
+.pics li{
+	flex:0 0 32%;
+	-webkit-flex:0 0 32%;
+}
+
+.pics li img{
+	width: 100%;
+	height: auto;
+}

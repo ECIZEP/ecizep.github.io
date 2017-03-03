@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FlexBox</title>
+
+	<style type="text/css">
+		body{
+			padding: 0px;
+			border: 0px;
+			margin: 0px;
+		}
+
+		.parent{
+			display: flex;
+			height: 100px;
+			width: 1000px;
+			flex-flow: row wrap;
+			background-color: yellow;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		[class^="child"]{
+			 width: 200px;  /* Or whatever */
+  			 background-color: grey;
+  			
+		}
+
+	 	.child1{
+		flex: 1 100px;
+	}
+	
+	.child2{
+		flex: 2 200px;
+	}
+	.child3{
+		flex: 1 300px;
+	}
+	
+	.child4{
+		flex: 1 200px;
+	} 
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child1">gdgdg</div>
+		<div class="child2">dfgdf<br>fsad</div>
+		<div class="child3">dfgdf<br>fsaddfgdf<br>fsad</div>
+		<div class="child4">dfgdf<br>fsaddfgdf<br>fsaddfgdf<br>fsaddfgdf<br>fsad</div>
+	</div>
+</body>
+</html>

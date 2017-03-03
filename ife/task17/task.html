@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style type="text/css">
+    	.aqi-chart-wrap{
+    		margin: 20px 0px 60px 30px;
+    		border-bottom: 1px solid #ccc;
+    		border-left: 1px solid #ccc;
+    		height: 510px;
+    	}
+    	.y{
+    		position: relative;
+    		text-align: right;
+    	}
+    	.y span{
+    		position: absolute;
+    		display: inline-block;
+    		width: 25px;
+    		left: -30px;
+    	}
+    	.y span:nth-of-type(1){
+    		top: 0px;
+    	}
+
+    	.y span:nth-of-type(2){
+    		top: 100px;
+    	}
+    	.y span:nth-of-type(3){
+    		top: 200px;
+    	}
+    	.y span:nth-of-type(4){
+    		top: 300px;
+    	}
+    	.y span:nth-of-type(5){
+    		top: 400px;
+    	}
+    	.y span:nth-of-type(6){
+    		top: 500px;
+    	}
+    
+	
+		.data{
+			position: relative;
+			top:510px;
+			left: 10px;
+            max-width: 1200px;
+		}
+
+    	.data span{
+    		position: absolute;
+    		bottom: 0px;
+    		display: inline-block;
+    		height: 0px;
+    		background: #325433;
+            cursor: pointer;
+            transition: height 0.4s ease-in-out;
+    	}
+
+        .day{
+            width: 5px;
+        }
+
+        .week{
+            width: 40px;
+        }
+
+        .month{
+            width: 100px;
+        }
+    </style>
+  </head>
+<body>
+  <fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio"></label>
+    <label>月<input name="gra-time" value="month" type="radio"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select">
+      <option>北京</option>
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+	<div class="y">
+		<span>500</span>
+		<span>400</span>
+		<span>300</span>
+		<span>200</span>
+		<span>100</span>
+		<span>0</span>
+	</div>
+	<div class="data" id="aqi-chart">
+	</div>
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>

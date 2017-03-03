@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>响应式布局</title>
+	<style>
+	*{
+		box-sizing:content-box;
+		margin: 0px;
+		border: 0px;
+		padding: 0px;
+	}
+	
+	.container{
+		width: calc(100% - 20px);
+		padding: 10px;
+	}
+
+	.box{
+		display: none;
+	}
+
+	[class*='col']{
+		float: left;
+		height: 50px;
+		margin: 10px;
+		outline: 1px solid #999;
+		background: #eee;
+		text-align: center;
+		line-height: 50px;
+	}
+
+	@media only screen and (min-width: 769px) {
+		.col-md-1{
+			width: calc(8.33% - 20px);
+		}
+		.col-md-2{
+			width: calc(16.66% - 20px);
+		}
+		.col-md-3{
+			width: calc(25% - 20px);
+		}
+		.col-md-4{
+			width: calc(33.33% - 20px);
+		}
+		.col-md-5{
+			width: calc(41.66% - 20px);
+		}
+		.col-md-6{
+			width: calc(50% - 20px);
+		}
+		.col-md-7{
+			width: calc(58.33% - 20px);
+		}
+		.col-md-8{
+			width: calc(66.66% - 20px);
+		}
+	}
+
+	@media only screen and (max-width: 768px){
+		.col-sm-2{
+			width: calc(16.66% - 20px);
+		}
+		.col-sm-3{
+			width: calc(25% - 20px);
+		}
+		.col-sm-6{
+			width: calc(50% - 20px);
+		}
+		.col-sm-8{
+			width: calc(66.66% - 20px);
+		}
+		.col-sm-12{
+			width: calc(100% - 20px);
+		}
+
+	}
+	.clearfix{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-4 col-sm-6">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-1 col-sm-2">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-1 col-sm-2">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-2 col-sm-8">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-2 col-sm-3">
+			<div class="box"></div>
+		</div>
+		<div class="col-md-6 col-sm-3">
+			<div class="box"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>
